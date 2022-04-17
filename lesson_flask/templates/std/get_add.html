@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}List of Students{% endblock %}
+{% block content %}
+    <h1>Height(sm) and Weight(kg)</h1>
+    {% for std in stds %}
+        <h3>{{ std }}</h3>
+    {% endfor %}
+    <a href="{{ url_for('get_requirements') }}" class="btn btn-primary">Use
+        Moduls
+    </a>
+{% endblock %}

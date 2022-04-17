@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <h1>Info</h1>
+    <a href="{{ url_for('get_avr_data') }}"
+       class="btn btn-primary">Statistic students
+    </a>
+{% endblock %}
